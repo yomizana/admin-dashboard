@@ -42,7 +42,7 @@ body {
 }
 
 .sidebar li {
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .header {
@@ -53,6 +53,12 @@ body {
     grid-template-columns: 1fr 1fr;
 
     gap: 10px;
+}
+
+.search-bar > input[type=text] {
+    all: unset;
+    background-color: lightgray;
+    border-radius: 10px;
 }
 
 .avibox {
