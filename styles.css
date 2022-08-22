@@ -73,8 +73,28 @@ body {
     border-radius: 10px;
 }
 
-.search-bar img {
+.icon {
     width: 30px;
+}
+
+.miniature-pfp {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.login-container {
+    display: grid;
+    grid-template-columns: 30px 60px 150px;
+    padding-right: 50px;
+    gap: 20px;
+
+    justify-self: end;
+    align-items: center;
+}
+
+.login-name {
+    font-weight: bold;
+    font-size: 1.15em;
 }
 
 .avibox {
@@ -95,13 +115,42 @@ body {
     border-radius: 50%;
 }
 
-.avibox .greetings, .name {
+.greetings, .name {
     grid-column: 2 / 3;
+    padding-left: 15px;
 }
 
-.buttons {
+.greetings {
+    align-self: end;
+}
+
+.name {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.button-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    gap: 50px;
+    align-items: center;
+    justify-self: end;
+    padding-right: 50px;
+}
+
+.header-button {
+    height: 40px;
+    width: 100px;
+    border-radius: 100px;
+
+    background-color: var(--sidebar-background);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.02em;
 }
 
 .main-content {
