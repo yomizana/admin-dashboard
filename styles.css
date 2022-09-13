@@ -212,6 +212,8 @@ body {
 
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
+
+    border-left: 8px solid orangered;
 }
 
 .card > h3 {
@@ -271,6 +273,7 @@ body {
 }
 
 .trending-box {
+    margin-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
