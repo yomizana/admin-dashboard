@@ -1,8 +1,9 @@
 :root {
-    --body-background: rgb(215, 215, 215);
-    --sidebar-background: rgb(88, 88, 193);
+    --body-background: #e2e8f0;
+    --sidebar-background: #155e75;
     --sidebar-font-color: white;
     --sidebar-font-size: 1.4em;
+    --card-border-color: #059669;
 
     --header-background: white;
     --card-background: white;
@@ -92,7 +93,7 @@ body {
 .search-bar > input[type=text] {
     all: unset;
     height: 30px;
-    background-color: lightgray;
+    background-color: var(--body-background);
     border-radius: 10px;
 }
 
@@ -213,7 +214,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
 
-    border-left: 8px solid orangered;
+    border-left: 8px solid var(--card-border-color);
 }
 
 .card > h3 {
