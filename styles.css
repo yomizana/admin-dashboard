@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --body-background: #e2e8f0;
     --sidebar-background: #155e75;
@@ -19,6 +37,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 6fr;
+    font-family: 'Roboto';
 
     background-color: var(--body-background);
 }
