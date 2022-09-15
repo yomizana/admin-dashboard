@@ -20,11 +20,16 @@
     --body-background: #e2e8f0;
     --sidebar-background: #155e75;
     --sidebar-font-color: white;
-    --sidebar-font-size: 1.4em;
+
     --card-border-color: #059669;
 
     --header-background: white;
     --card-background: white;
+
+    --sidebar-font-size: 1.3em;
+    --category-font-size: 1.4em;
+    --card-title-font-size: 1.1em;
+    --general-font-size: 0.95em;
 }
 
 * {
@@ -61,6 +66,7 @@ body {
     gap: 20px;
     
     padding-left: 12px;
+    padding-right: 80px;
     background-color: var(--sidebar-background);
     color: var(--sidebar-font-color);
     font-size: var(--sidebar-font-size);
@@ -96,6 +102,7 @@ body {
     gap: 10px;
 
     box-shadow: 0px 1px 5px 0px rgb(158 158 158);
+    margin-bottom: 30px;
 }
 
 .search-bar, .avibox {
@@ -203,7 +210,7 @@ body {
 }
 
 .section-name {
-    padding-top: 30px;
+    font-size: var(--category-font-size);
     padding-bottom: 8px;
 }
 
@@ -226,7 +233,7 @@ body {
 }
 
 .card {
-    height: 200px;
+    height: 250px;
     background-color: var(--card-background);
     border-radius: 8px;
 
@@ -234,6 +241,7 @@ body {
     grid-template-rows: 1fr 2fr 1fr;
 
     border-left: 8px solid var(--card-border-color);
+    font-size: var(--general-font-size);
 }
 
 .card > h3 {
@@ -245,6 +253,7 @@ body {
 
 .card > p {
     justify-self: start;
+    color: darkslategray;
 }
 
 .card > h3, .card > p {
@@ -279,7 +288,12 @@ body {
 }
 
 .announcement-box h4 {
-    font-size: 1.1em;
+    font-size: var(--card-title-font-size);
+}
+
+.announcement-box > p {
+    font-size: var(--general-font-size);
+    color: darkslategray;
 }
 
 .announcement-box hr {
@@ -322,12 +336,12 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
-    color: gray;
+    color: darkslategray;
 }
 
 .trending .image-cropper {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     overflow: hidden;
 }
