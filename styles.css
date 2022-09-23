@@ -158,7 +158,9 @@ label[for=search] {
 
 .miniature-pfp {
     width: 50px;
+    height: 50px;
     border-radius: 50%;
+    justify-self: center;
 }
 
 .login-container {
@@ -184,10 +186,11 @@ label[for=search] {
 
 .avibox img {
     align-self: center;
+    justify-self: right;
     grid-row: 1 / 3;
     grid-column: 1 / 2;
-    width: 80px;
-    height: auto;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -384,6 +387,7 @@ label[for=search] {
 }
 
 .trending img {
-    width: 150px;
-    margin-left: -50%
+    display: block;
+    margin: auto;
+    width: 50px;
 }
