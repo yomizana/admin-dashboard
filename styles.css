@@ -157,6 +157,7 @@ label[for=search] {
 }
 
 .miniature-pfp {
+    object-fit: cover;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -185,6 +186,7 @@ label[for=search] {
 }
 
 .avibox img {
+    object-fit: cover;
     align-self: center;
     justify-self: right;
     grid-row: 1 / 3;
